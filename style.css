@@ -1,0 +1,323 @@
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bg-color:#2a2a2a;
+    --second-bg-color:#202020;
+    --text-color:#fff;
+    --second-color:#ccc;
+    --main-color:#05b4ff;
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+   position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    padding: 22px 10%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo{
+      color: var(--text-color);
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: 1px;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+    margin-top: 15px;
+}
+
+.navlist a{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin:0 28px;
+    transition: all .45s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.navlist a.active{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+#first{
+    padding: 160px 15% 120px;
+    background-image: url(https://imgs.search.brave.com/Fjco0EImdLAjQDRV46V6nDeCIUXFsib-bg3XXk_xiCo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODUyNDE2NDU5Mjct/YzdhOGU1ODQwYzQy/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4bGVI/QnNiM0psTFdabFpX/UjhOWHg4ZkdWdWZE/QjhmSHg4ZkE9PQ);
+    background-size: cover;
+    background-position: center;
+    height: 105vh;
+}
+.home{
+    position: relative;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+     
+}
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+ .home h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+ }
+ .home h3{
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+ }
+ .home p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+ }
+ .button{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+ }
+ .btn{
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+ }
+ .btn:hover{
+    transform: scale(0.9);
+ }
+ #about{
+    padding: 160px 15% 120px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+ }
+ #about img{
+    height: 600px;
+    max-width: 530px;
+    width: 80%;
+    border-radius: 5px;
+ }
+ .about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+    margin-bottom: 20px;
+ }
+ .about-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    margin-top: 20px;
+    margin-bottom: 4rem;
+ }
+ #edu{
+    padding: 140px 15% 120px;
+ }
+ .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+ }
+ .box{
+    border: 2px solid white;
+    padding: 5px;
+ }
+ .ex i{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    
+ }
+ .box >i{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #05b4ff;
+ }
+.box .p1{
+    display: inline;
+    margin-right: 40px;
+    font-size: xx-large;
+}
+.box .p2{
+    display: inline;
+}
+
+ #edu .main-text{
+   
+    text-align: center;
+    font-size: var(--h2-font);
+ }
+ .box .para{
+    margin-top: 40px;
+ }
+ .box h3{
+    font-size: 1.5rem;
+    color: #05b4ff;
+ }
+ .ex h3{
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+ .ex h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+ .ex #html{
+    color: orangered;
+ }
+ .ex #css{
+    color: #05b4ff;
+ }
+ .ex #js{
+    color: yellow;
+ }
+ #project{
+    padding: 140px 15% 120px;
+ }
+ #project .main-text{
+   
+    text-align: center;
+    font-size: var(--h2-font);
+ }
+ .project-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    align-items: center;
+    gap:2.5rem;
+    margin-top: 5rem;
+ }
+ .row{
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+ }
+ .row img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+ }
+ .project2 .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1),#00a6ff);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+ }
+ .layer h5{
+    font: 2rem;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 900;
+ }
+ .layer p{
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.8;
+ }
+ .layer i{
+    color:var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+ }
+
+ .row:hover .layer{
+    height: 90%;
+ }
+ .content{
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+ }
+ footer{
+   background-color: black;
+   text-align: center;
+   padding-top: 20px;
+   font-size: 20px;
+   height: 110px;
+ }
